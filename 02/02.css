@@ -1,5 +1,104 @@
-/* 외부스타일 */
-section {
+* {
+   padding: 0px; 
+   margin: 0px;
+}
+
+header{
+    padding: 20px;
+}
+
+
+
+main{
+    width: 80%;
+}
+
+main > section > p {
+    color: white;
+}
+
+section{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+}
+#reactId{
+    background-color: violet;
+}
+
+article{
+    border-width: 10px;
+    border-style: dotted;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-top:10px;
+    border-bottom:20px;
+    border-right: 5px;
+}
+article > p {
+
+        font-family: "Gamja Flower", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+      
+}
+li i{
+    color: red;
+}
+
+ul {
+    width: 100%;
+    height: 80px;
     background-color: aquamarine;
-    color : white;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+
+li{ 
+    width: 15%;
+    height: 40px;
+    padding: 5px;
+    background-color: beige;
+    color: black;
+    margin: 10px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li:hover{
+    background-color: blue;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;   
+}
+
+a:hover{
+    color: white;
+}
+
+a:link, a:visited{
+    color: black;
+}
+
+@media screen and (max-width:768px) {
+    ul {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }
+    li{
+        width: 90%;
+        margin: 2px;
+
+    }   
 }

@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KDT02</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <!-- 웹아이콘 -->
+    <!-- </head>link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=manage_search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=select_check_box" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- 외부스타일 -->
     <link rel="stylesheet" type="text/css" href="./02.css">
     <!-- 내부스타일 -->
     <style>
         .c1 {
-            background-color: aliceblue;
+            background-color: rgb(194, 187, 187);
         }
     </style>
 
@@ -19,25 +27,29 @@
 <body>
     <header>
         <div>mylogo</div>
+        <span class="material-symbols-outlined">
+            </span>
         <nav>
             <ul>
                 <li><a href="#htmlId">HTML</a></li>
                 <li><a href="#cssId">CSS</a></li>
                 <li><a href="#jsId">JavaScript</a></li>
-                <li><a href="#reactId">React</a></li>
-                <li><a href="https://www.facebook.com/">facebook</a></li>
-                <li><a href="https://www.instagram.com/">instagram</a></li>
+                <li><a href="#reactId"><i class="fa-brands fa-react"></i>React</a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>facebook</a></li>
+                <li><a href="https://www.instagram.com/" ><i class="fa-brands fa-instagram"></i>instagram</a></li>
+                
             </ul>
         </nav>
     </header>
     <main>
         <article>
             <h1>
+                <span class="material-symbols-outlined">manage_search</span>
                 프론트엔드
                 FrontEnd
             </h1>
             <p>
-                웹에서 사용자에게 시각적으로 보여지는 부분을 의미한다. 프론트엔드쪽에서는 주로 <span>HTML, CSS, 자바스크립트</span>가 쓰이며, 요즘은 페이스북에서 개발한 자바스크립트에서
+                웹에서 사용자에게 시각적으로 보여지는 부분을 의미한다. 프론트엔드쪽에서는 주로 HTML, CSS, 자바스크립트가 쓰이며, 요즘은 페이스북에서 개발한 자바스크립트에서
                 파생된 싱글 페이지
                 애플리케이션
                 형태의
@@ -45,9 +57,9 @@
             </p>
         </article>
 
-        <section class="c1" id="htmlId" style="background-color: blue; ">
-        <!-- 인라인 속성의 style 이 우선 -->
-        <!-- <section class="c1" id="htmlId">  -->
+        <!-- <section class="c1" id="htmlId" style="background-color: orange"> -->
+            <!-- 인라인 속성의 style 이 우선 -->
+            <section class="c1" id="htmlId"> 
             <h2>HTLM</h2>
             <img src="../img/html.png" alt="html이미지" />
             <p>
@@ -56,21 +68,21 @@
         </section>
         <section class="c2" id="cssId">
             <h2>CSS</h2>
-            <img src="../img/css.png" alt="css이미지"/>
+            <img src="../img/css.png" alt="css이미지" />
             <p>
                 Cascading Style Sheets(CSS)는 HTML이나 XML(XML의 방언인 SVG, XHTML 포함)로 작성된 문서의 표시 방법을 기술하기 위한 스타일 시트 언어
             </p>
         </section>
         <section class="c1" id="jsId">
             <h2>JavaScript</h2>
-            <img src="../img/js.png" alt="js이미지"/>
+            <img src="../img/js.png" alt="js이미지" />
             <p>
                 웹 페이지를 위한 스크립트 언어로 가벼운, 인터프리터 혹은 just-in-time 컴파일 프로그래밍 언어로, 일급 함수를 지원
             </p>
         </section>
         <section class="c2" id="reactId">
             <h2>React</h2>
-            <img src="../img/react.png" alt="react이미지"/>
+            <img src="../img/react.png" alt="react이미지" />
             <p>
                 사용자 인터페이스를 만들기 위한 JavaScript 라이브러리
             </p>
