@@ -6,12 +6,80 @@
 
 main {
     width: 80%;
-    height: 100vh;
     margin-left: 10%;
-    background-color: aqua;
-
+    padding: 20px;
+    border : 0px solid gray;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
 }
+
+h1, nav, article {
+    width: 90%;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    
+}
+
+nav {
+    padding: 40px;
+    
+}
+article {
+    padding: 20px;
+}
+
+h1 {
+    height: 80px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+/* ol > li/ */
+nav li {
+    padding: 5px 15px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border: 1px dotted gray;
+}
+
+
+article{
+    display: flex;
+    justify-content: end;
+}
+
+nav li:hover{
+    background-color: beige;
+}
+
+article li {
+    display: inline-flex;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+
+article li:hover{
+    background-color: brown;
+}
+
+ul > li {
+    list-style: none; 
+}
+
+a {
+    text-decoration: none;
+}
+
+article a:link, article a:visited, article a:hover {
+    color: white;
+}
+
+#bt1{
+    background-color: green;
+}
+
