@@ -1,0 +1,32 @@
+form {
+    width: 90%;
+    height: 150px;
+
+    /* form 을 일렬로 정렬 */
+    display: flex;
+
+    /* 중심축과 수평방향 정렬 */
+    justify-content: center;
+    /* 중심축과 수직방향 정렬 */
+    align-items: center;
+
+    /* 일렬로 되어있는 div 를 밑으로 내림 */
+    flex-direction: column;
+    
+}
+
+form > div {
+    margin: 10px;
+    width: 90%;
+    
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+/* input[id=txt2]/ */
+#txt2{
+    background-color: beige ;
+    color: brown;
+}
