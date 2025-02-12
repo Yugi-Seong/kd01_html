@@ -8,14 +8,20 @@ function check1(){
     // 1. 입력 문자열 가져오기 
     let s = document.getElementById('txt1').value  ;
 
-    // 2. 문자열을 뒤집어진 문자열 생성
-    let sr = '';
-    for(let i=s.length-1 ; i>=0 ; i--){
-        sr = sr + s[i];
-    }
+    // // 2. 문자열을 뒤집어진 문자열 생성
+    // let sr = '';
+    // for(let i=s.length-1 ; i>=0 ; i--){
+    //     sr = sr + s[i];
+    // }
+
+    // 2. 배열을 이용하여 문자열 뒤집기 
+    let sr = '' ;
+    sr = s.split('').reverse().join(''); 
+    console.log(sr);
+    console.log(`sr = ${sr}`);    
 
     // 3. 입력 문자열과 뒤집어진 문자열 비교 
-    if (s===sr){
+    if (s.replaceAll(" ","")==sr.replaceAll(" ","")){
         showMsg('회문입니다.');
     }else {
         showMsg('회문이 아닙니다.');
