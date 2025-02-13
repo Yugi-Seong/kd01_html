@@ -20,6 +20,9 @@ function lotto(){
     arrLotto.sort((a,b) => a-b) ;
     console.log(arrLotto) ;
 
+    // arrLotto.push('+') ;
+
+
 
     // 1-3 . + 1개 번호 추출
     while(arrLotto.length < 7){
@@ -28,13 +31,17 @@ function lotto(){
         if ( !arrLotto.includes(n) ){
             arrLotto.push(n);
         }
+
     }
+
+    console.log(arrLotto);
+    arrLotto.splice(6,0,'+');
+    console.log(arrLotto);
 
     // 화면의 id =  msg 부분에 출력
     console.log(arrLotto) ;
-    let spanTgs = arrLotto.map(item => `<span>${item}</span>`) 
+    let spanTgs = arrLotto.map(item => 
+                        item == '+' ? `<span class='spplus'>${item}</span>`:`<span class='sp${Math.floor(item/10)}'>${item}</span>`) 
                             .join('');
-    document.getElementById('msg').innerHTML = spanTgs ;
-
-
+    document.getElementById('msgLotto').innerHTML = spanTgs ;
 }
