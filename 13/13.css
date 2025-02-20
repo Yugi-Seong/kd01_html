@@ -1,0 +1,38 @@
+form {
+    width: 90%;
+    height: 60px;
+
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dt {
+    height: 30px;
+}
+ul {
+    width: 100%;
+}
+li {
+    height: 30px;
+    padding: 5px;
+    width: 100%;
+    font-size: small;
+}
+
+li:hover {
+    background-color: aliceblue;
+}
+
+.sp {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    border-radius: 5px;
+    color: white;
+    width: 25px;
+    height: 25px;
+
+}
