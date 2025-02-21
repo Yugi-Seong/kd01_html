@@ -36,3 +36,42 @@ li:hover {
     height: 25px;
 
 }
+
+fieldset {
+    width: 350px;
+    height: 40px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 20px;
+    padding: 0px 10px;
+}
+
+label {
+    width: 90px;
+    display: inline-flex;
+    margin-right: 10px;
+    font-size: small;
+}
+
+#mv {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+#mvPoster {
+    width: 20%;
+}
+
+#mvList {
+    width: 80%;
+}
+
+img {
+    width: 90%;
+}
